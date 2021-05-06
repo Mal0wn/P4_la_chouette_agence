@@ -5,11 +5,12 @@
     <meta name="description" content="La chouette agence est une agence web design basée sur la ville de Lyon. Elle aide les entreprises à trouver une identité visuelle et leur donner une visibilité sur Internet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<meta name="robots" content="index, follow">
-    <link rel="shortcut icon" type="image/png" href="./img/favicon.jpg">
+	<link rel="shortcut icon" type="image/png" href="./img/favicon.jpg">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/et-line.css">
+	
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	
 <!--Twitter Card-->
 	<meta name=”twitter:card” content="summary" />
@@ -25,11 +26,12 @@
 	 <meta property="og:description" content="La chouette agence est une agence web design basée sur la ville de Lyon. Elle aide les entreprises à trouver une identité visuelle et leur donner une visibilité sur Internet" />
 	 
 
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+	 <script src="./js/jquery-2.1.0.min.js" defer></script>
+	 <script src="./js/bootstrap.min.js" defer></script>
+	 <script src="./js/blocs.min.js" defer></script>
+	 <script src="./js/jquery.touchSwipe.min.js" defer></script>
+	 <script src="./js/jqBootstrapValidation.min.js" defer></script>
+	 <script src="./js/formHandler.min.js" defer></script>
 
     <title>Accueil | La Chouette Agence | Agence Web Lyon</title>
 
@@ -140,9 +142,9 @@
 
 <!-- bloc-3-what-i-do -->
 <div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
-	<div class="container bloc-lg">
-		<div class="row tight-width-whitespace black-background">
-			<section class="col-sm-12">
+	<div class="container bloc-lg whatido">
+		<div class="row tight-width-whitespace black-background blocwhatido">
+			<section class="col-sm-12 section_whatido">
 				<h2 class="mg-md text-center tc-white">
 					Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .<br>
 				</h2>
@@ -157,7 +159,7 @@
 
 <!-- bloc-4-portfolio -->
 <div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
-	<div class="container bloc-lg">
+	<div class="container bloc-lg rea">
 			<section class="col-sm-12 text-center row">
 				<h3>Nous travaillons avec beaucoup de clients, <br>voici nos réalisations.
 			</section>
@@ -215,33 +217,36 @@
 		</section>
 </div>
 <!-- bloc-5-cta END -->
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')" aria-label="Retourner en haut de la page"><span class="fa fa-chevron-up"></span></a>
+<!-- ScrollToTop Button END-->
 <!-- Footer - bloc-8 -->
 <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<section class="col-sm-12">
-				<h4 class="text-center white text-footer">
+				<h4 class="text-center black text-footer">
 					La chouette agence - Agence web basée à Lyon.
 				</h4>
 				<ul class="row row-no-gutters social">
 					
 						<li class="text-center col-sm-3">
-							<a class="social" href="https://twitter.com/"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="https://twitter.com/" aria-label="Twitter"><span class="fa fa-twitter icon-md"></span></a>
 						</li>
 					
 					
 						<li class="text-center col-sm-3">
-							<a class="social" href="https://fr-fr.facebook.com/"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="https://fr-fr.facebook.com/" aria-label="Facebook"><span class="fa fa-facebook icon-md"></span></a>
 						</li>
 					
 					
 						<li class="text-center col-sm-3">
-							<a class="social" href="https://dribbble.com/"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="https://dribbble.com/" aria-label="Dribble"><span class="fa fa-dribbble icon-md"></span></a>
 						</li>
 					
 					
 						<li class="text-center col-sm-3">
-							<a class="social" href="https://www.instagram.com/"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="https://www.instagram.com/" arial-label="Instagram"><span class="fa fa-instagram icon-md"></span></a>
 						</li>
 				</ul>
 				<!--Suppression des liens externes inutiles-->
