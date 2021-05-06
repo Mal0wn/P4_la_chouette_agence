@@ -369,6 +369,11 @@ a:hover {
     flex-direction: column;
     align-items: center;
 }
+.ready_project h2 {
+    color: black;
+    background-color: #F3976C;
+    padding: 10px;
+}
 /*---------------mycss---------------------*/
 .black {
    color:black;
